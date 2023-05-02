@@ -7,5 +7,5 @@ import { Ingredient } from '../shared/ingredient.model';
     styleUrls: ['./shopping-list.component.css'],
 })
 export class ShoppingListComponent {
-    ingredeients: Ingredient[] = [new Ingredient('Bread', 2), new Ingredient('Cheese', 1), new Ingredient('Milk', 2), new Ingredient('Eggs', 12), new Ingredient('Butter', 1), new Ingredient('Sugar', 1), new Ingredient('Water', 12)];
+    ingredients: Ingredient[] = [new Ingredient('Bread', 2), new Ingredient('Cheese', 1), new Ingredient('Milk', 2), new Ingredient('Eggs', 12), new Ingredient('Butter', 1), new Ingredient('Sugar', 1), new Ingredient('Water', 12)];
 }
