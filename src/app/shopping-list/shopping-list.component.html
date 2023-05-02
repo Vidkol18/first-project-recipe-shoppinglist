@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-xs-10">
+        <app-shopping-edit></app-shopping-edit>
+        <hr />
+        <div class="list-group">
+            <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" style="cursor: pointer" *ngFor="let ingredient of ingredeients">
+                {{ ingredient.name }}
+                <span class="badge bg-primary rounded-pill">{{ ingredient.quantity }}</span>
+            </a>
+        </div>
+    </div>
+</div>
