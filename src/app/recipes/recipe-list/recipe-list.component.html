@@ -3,13 +3,11 @@
         <input class="btn btn-success" type="button" value="New Recipe" />
     </div>
 </div>
-
 <hr />
-
 <div class="row">
     <div class="col-xs-12">
         <div class="list-group">
-            <app-recipe-item *ngFor="let recipe of recipes" [name]="recipe.name" [desc]="recipe.description" [image]="recipe.imagePath"></app-recipe-item>
+            <app-recipe-item *ngFor="let recipe of recipes" [recipe]="recipe" (recipeSelected)="onRecipeSelected(recipe)"></app-recipe-item>
         </div>
     </div>
 </div>
